@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from telethon import TelegramClient
 import subprocess
 # Use your own values from my.telegram.org
