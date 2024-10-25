@@ -19,8 +19,8 @@ async def main():
     for x in previousMessages:
         await x.delete()
 
-    await client.send_message('IPLogger', hostname)
-    await client.send_message('IPLogger', addresses )
+    await client.send_message('IPLogger', hostname, silent=True)
+    await client.send_message('IPLogger', addresses, silent=True )
 
 
 with client:
