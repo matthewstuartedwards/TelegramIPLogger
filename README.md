@@ -11,5 +11,5 @@ Obtain an api_id and api_hash.  Replace those values in the logIPToTelegram.py f
 Run the script with `python logIPToTelegram.py`.  The first time you run it, you will be asked to enter your phone number and then the code received.  After that you'll need to enter your Telegram password.  After that you will have successfully signed in and a .session file will be created.  If this session file is removed you'll have to manually log in again which means automatically running the script will stop working.
 
 #Running the script automatically:
-On linux, modify the `addCronJob.sh` file to point to where you downloaded the logIPToTelegram.py file and then run the file (or just copy the one line and run it).  This will add a cron job that will run the script every day at 6am.  You can modify the cron job parameters to suit your level of automation.
+On linux, modify the `addCronJob.sh` file to point to where you downloaded the logIPToTelegram.py file and then run the file (or just copy the one line and run it).  This will add a cron job that will run the script every day at 6am.  You can modify the cron job parameters to suit your level of automation.  You can also modify the telegramStartup.service with the location of this repository and your username to enable running the script on computer startup.  This is very helpful when there's been a power outage.
 
