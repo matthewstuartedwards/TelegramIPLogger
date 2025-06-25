@@ -1,0 +1,13 @@
+[Unit]
+Description=Have telegram send me my IP address
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/env PYTHONPATH=~/miniconda3/lib/python3.12/site-packages <path to>/TelegramIPLogger/logIPToTelegram.py
+WorkingDirectory=<path to>/TelegramIPLogger
+User=<enter your user>
+
+[Install]
+WantedBy=multi-user.target
